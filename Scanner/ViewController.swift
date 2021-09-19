@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MLKitBarcodeScanning
+import AVFoundation
 
 class ViewController: UIViewController {
 
