@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		355253E726F7AA4D0061259D /* BarcodeScanningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253E626F7AA4D0061259D /* BarcodeScanningManager.swift */; };
+		355253E926F7AF8E0061259D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253E826F7AF8E0061259D /* ListViewController.swift */; };
+		355253EB26F7AFA50061259D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253EA26F7AFA50061259D /* Item.swift */; };
+		355253ED26F7AFBF0061259D /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253EC26F7AFBF0061259D /* AddPersonViewController.swift */; };
+		355253EF26F7AFEB0061259D /* ScanButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253EE26F7AFEB0061259D /* ScanButtonTableViewCell.swift */; };
+		355253F126F7B02C0061259D /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253F026F7B02C0061259D /* ItemTableViewCell.swift */; };
+		355253F426F7B0EC0061259D /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355253F326F7B0EC0061259D /* ScannerViewController.swift */; };
 		358FC65026F79E0B0084B063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358FC64F26F79E0B0084B063 /* AppDelegate.swift */; };
 		358FC65226F79E0B0084B063 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358FC65126F79E0B0084B063 /* SceneDelegate.swift */; };
 		358FC65426F79E0B0084B063 /* ViciousScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358FC65326F79E0B0084B063 /* ViciousScannerViewController.swift */; };
@@ -19,6 +25,12 @@
 
 /* Begin PBXFileReference section */
 		355253E626F7AA4D0061259D /* BarcodeScanningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanningManager.swift; sourceTree = "<group>"; };
+		355253E826F7AF8E0061259D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		355253EA26F7AFA50061259D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		355253EC26F7AFBF0061259D /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		355253EE26F7AFEB0061259D /* ScanButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButtonTableViewCell.swift; sourceTree = "<group>"; };
+		355253F026F7B02C0061259D /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		355253F326F7B0EC0061259D /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		358FC64C26F79E0B0084B063 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358FC64F26F79E0B0084B063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358FC65126F79E0B0084B063 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +68,18 @@
 			isa = PBXGroup;
 			children = (
 				355253E626F7AA4D0061259D /* BarcodeScanningManager.swift */,
+				355253EA26F7AFA50061259D /* Item.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		355253F226F7B0D00061259D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				355253F026F7B02C0061259D /* ItemTableViewCell.swift */,
+				355253EE26F7AFEB0061259D /* ScanButtonTableViewCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		358FC64326F79E0B0084B063 = {
@@ -81,6 +103,7 @@
 		358FC64E26F79E0B0084B063 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				355253F226F7B0D00061259D /* UI */,
 				355253E526F7AA430061259D /* Core */,
 				358FC64F26F79E0B0084B063 /* AppDelegate.swift */,
 				358FC65126F79E0B0084B063 /* SceneDelegate.swift */,
@@ -89,6 +112,9 @@
 				358FC65826F79E0B0084B063 /* Assets.xcassets */,
 				358FC65A26F79E0B0084B063 /* LaunchScreen.storyboard */,
 				358FC65D26F79E0B0084B063 /* Info.plist */,
+				355253E826F7AF8E0061259D /* ListViewController.swift */,
+				355253EC26F7AFBF0061259D /* AddPersonViewController.swift */,
+				355253F326F7B0EC0061259D /* ScannerViewController.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -217,9 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				358FC65426F79E0B0084B063 /* ViciousScannerViewController.swift in Sources */,
+				355253F126F7B02C0061259D /* ItemTableViewCell.swift in Sources */,
 				358FC65026F79E0B0084B063 /* AppDelegate.swift in Sources */,
+				355253F426F7B0EC0061259D /* ScannerViewController.swift in Sources */,
 				358FC65226F79E0B0084B063 /* SceneDelegate.swift in Sources */,
+				355253E926F7AF8E0061259D /* ListViewController.swift in Sources */,
+				355253EF26F7AFEB0061259D /* ScanButtonTableViewCell.swift in Sources */,
+				355253EB26F7AFA50061259D /* Item.swift in Sources */,
 				355253E726F7AA4D0061259D /* BarcodeScanningManager.swift in Sources */,
+				355253ED26F7AFBF0061259D /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
