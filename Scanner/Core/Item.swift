@@ -30,7 +30,7 @@ enum State {
 }
 
 enum DeviceType: String, CaseIterable {
-    case watch, iPhone, iPad, keyboard, mouse, trackpad
+    case watch, iPhone, iPad, keyboard, mouse, trackpad, hub
     
     var iconName: String {
         switch self {
@@ -46,6 +46,8 @@ enum DeviceType: String, CaseIterable {
             return "oval.portrait"
         case .trackpad:
             return "rectangle"
+        case .hub:
+            return "externaldrive"
         }
     }
 }

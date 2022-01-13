@@ -35,7 +35,8 @@ class AddPersonViewController: UIViewController {
         Device(type: .iPad, serialNo: nil),
         Device(type: .keyboard, serialNo: nil),
         Device(type: .mouse, serialNo: nil),
-        Device(type: .trackpad, serialNo: nil)
+        Device(type: .trackpad, serialNo: nil),
+        Device(type: .hub, serialNo: nil)
     ]
     
     private var scanningAtIndex: Int?

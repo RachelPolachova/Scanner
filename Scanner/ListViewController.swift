@@ -39,7 +39,7 @@ class ListViewController: UIViewController {
     }
     
     private func createCSV() {
-        var csvString = "\("Name"),\("Watch serial no."),\("iPhone serial no."),\("iPad serial no."),\("Keyboard serial no."),\("Mouse serial no."),\("Trackpad serial no.")\n\n"
+        var csvString = "\("Name"),\("Watch serial no."),\("iPhone serial no."),\("iPad serial no."),\("Keyboard serial no."),\("Mouse serial no."),\("Trackpad serial no."), \("Hub")\n\n"
         for item in self.items {
             csvString = csvString.appending("\(item.name)")
             item.devices.forEach{ csvString.append(",\($0.serialNo ?? "-")") }

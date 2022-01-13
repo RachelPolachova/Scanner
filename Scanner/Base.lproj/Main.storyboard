@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EkT-JB-Kzy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EkT-JB-Kzy">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MtH-8j-ZSk">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1030"/>
+                                <rect key="frame" x="0.0" y="20" width="810" height="1010"/>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-Dr-Iun">
                                 <rect key="frame" x="305" y="440.5" width="200" height="199"/>
@@ -29,13 +29,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa4-f7-HUh">
-                                <rect key="frame" x="20" y="20" width="27" height="48"/>
+                                <rect key="frame" x="20" y="40" width="27" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nd-vg-qCw">
-                                <rect key="frame" x="710" y="20" width="80" height="44"/>
+                                <rect key="frame" x="709" y="40" width="81" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="Export">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,6 +77,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EkT-JB-Kzy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7C4-EQ-qbx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -92,17 +93,17 @@
         <!--Packages-->
         <scene sceneID="LgH-YI-SZt">
             <objects>
-                <viewController id="Qkc-OF-A6q" customClass="ListViewController" customModule="BarcodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qkc-OF-A6q" customClass="ListViewController" customModule="Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xT0-Q6-QB3">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5xw-xN-YAi">
-                                <rect key="frame" x="0.0" y="50" width="810" height="980"/>
+                                <rect key="frame" x="0.0" y="70" width="810" height="960"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dlK-pX-CXQ" customClass="ItemTableViewCell" customModule="BarcodeReader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="810" height="40"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dlK-pX-CXQ" customClass="ItemTableViewCell" customModule="Scanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="810" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dlK-pX-CXQ" id="mFi-zD-N9s">
                                             <rect key="frame" x="0.0" y="0.0" width="810" height="40"/>
@@ -183,7 +184,7 @@
                     <tabBarItem key="tabBarItem" title="Packages" id="6jK-tc-6ai"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P0I-bX-tmO">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="810" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -198,25 +199,25 @@
         <!--Add Person View Controller-->
         <scene sceneID="OPC-i2-ZpQ">
             <objects>
-                <viewController storyboardIdentifier="addPerson" id="tUX-oy-Q8z" customClass="AddPersonViewController" customModule="BarcodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addPerson" id="tUX-oy-Q8z" customClass="AddPersonViewController" customModule="Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bL4-CJ-mKV">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-vs-yDh">
-                                <rect key="frame" x="20" y="50" width="770" height="34"/>
+                                <rect key="frame" x="20" y="70" width="770" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-sa-wTc">
-                                <rect key="frame" x="20" y="114" width="770" height="250"/>
+                                <rect key="frame" x="20" y="134" width="770" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="HJk-yM-7aL"/>
+                                    <constraint firstAttribute="height" constant="300" id="HJk-yM-7aL"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dSa-Nd-3ch" customClass="ScanButtonTableViewCell" customModule="BarcodeReader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="770" height="43"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dSa-Nd-3ch" customClass="ScanButtonTableViewCell" customModule="Scanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="770" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSa-Nd-3ch" id="yMP-DX-L7i">
                                             <rect key="frame" x="0.0" y="0.0" width="770" height="43"/>
@@ -252,7 +253,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnp-Uv-9jW">
-                                <rect key="frame" x="764" y="0.0" width="46" height="30"/>
+                                <rect key="frame" x="764" y="20" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="tUX-oy-Q8z" eventType="touchUpInside" id="GaZ-JP-83F"/>
@@ -290,7 +291,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0iO-ty-g1u">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                                <rect key="frame" x="0.0" y="20" width="810" height="1060"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nk4-t9-mJ3"/>
